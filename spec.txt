@@ -1,0 +1,5 @@
+Family website with the following functionalities:
+1. Log in/out
+2. Upload/Remove photos
+3. Create/Delete events
+
