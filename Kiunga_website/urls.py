@@ -20,5 +20,6 @@ from main_app import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'', include(('main_app.urls','main_app'), namespace='main_app'))
+    re_path(r'', include(('main_app.urls','main_app'), namespace='main_app')),
+    re_path(r'^users/', include(('users.urls', 'users'), namespace= 'users')),
 ]
