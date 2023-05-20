@@ -1,10 +1,10 @@
 <p>
     <a href="{% url 'main_app:index' %}"> </ahref> Kiungas Family Website</a>
 <p>
-    {% if user.is_authenticated %}
-    Hello, {{ user.username }}.
-<p><a href="{% url 'users:logout' %}">Log Out</a></p>
+{% if user.is_authenticated %}
+    Hello,  {{ user.username }}.
 {% else %}
+<a href="{% url 'users:register' %}">Register</a>
 <a href="{% url 'users:login' %}">Log In</a>
 {% endif %}
 </p>
@@ -13,6 +13,6 @@
 {% block content %}{% endblock content %}
 
 <footer>
-    <p>Author: Munene Kinyua</p>
-    <p><a href="mailto:munene.kinyua@yale.edu">munene.kinyua@yale.edu</a></p>
+    <p><a href="{% url 'users:logout' %}">Log Out</a></p>
+    <p>Author: <a href="mailto:munene.kinyua@yale.edu">Munene Kinyua</a></p>
 </footer>

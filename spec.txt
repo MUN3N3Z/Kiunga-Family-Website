@@ -1,5 +1,13 @@
 Family website with the following functionalities:
 1. Log in/out
-2. Upload/Remove photos
+2. Upload/Remove photos & videos
 3. Create/Delete events
+4. Google calendar API
 
+Current user login inputs: username, password 
+Registration details: First Name, Last Name, Family Name, Email, Phone Number
+    Send welcome email if registration is successful
+
+
+username: ADMIN
+password: tmk0706105912
